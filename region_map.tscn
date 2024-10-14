@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://i2ij16lpnsna"]
+
+[ext_resource type="Texture2D" uid="uid://dfjbabyxap7va" path="res://rspoc_tileset_road.png" id="1_a32s3"]
+[ext_resource type="Texture2D" uid="uid://b84e2mpksodpj" path="res://tile_selector.png" id="2_mh2vv"]
+[ext_resource type="Script" path="res://region_map.gd" id="2_x62fd"]
+[ext_resource type="Script" path="res://tile_selector.gd" id="3_gqx8n"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ehk2"]
+texture = ExtResource("1_a32s3")
+texture_region_size = Vector2i(24, 24)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_th2tf"]
+tile_size = Vector2i(24, 24)
+sources/0 = SubResource("TileSetAtlasSource_8ehk2")
+
+[node name="RegionMap" type="TileMap"]
+position = Vector2(96, 48)
+tile_set = SubResource("TileSet_th2tf")
+rendering_quadrant_size = 24
+format = 2
+script = ExtResource("2_x62fd")
+
+[node name="TileSelector" type="Sprite2D" parent="."]
+texture = ExtResource("2_mh2vv")
+centered = false
+script = ExtResource("3_gqx8n")
