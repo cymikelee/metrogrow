@@ -8,6 +8,7 @@
 script = ExtResource("1_wv81t")
 
 [node name="RegionMap" parent="." instance=ExtResource("1_j75vb")]
+use_parent_material = false
 
 [node name="HUD" parent="." instance=ExtResource("2_savw4")]
 

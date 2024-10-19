@@ -25,11 +25,11 @@ texture_region_size = Vector2i(24, 24)
 tile_size = Vector2i(24, 24)
 sources/0 = SubResource("TileSetAtlasSource_8ehk2")
 
-[node name="RegionMap" type="TileMap"]
+[node name="RegionMap" type="TileMapLayer"]
+use_parent_material = true
 position = Vector2(96, 48)
 tile_set = SubResource("TileSet_th2tf")
 rendering_quadrant_size = 24
-format = 2
 script = ExtResource("2_x62fd")
 
 [node name="TileSelector" type="Sprite2D" parent="."]
