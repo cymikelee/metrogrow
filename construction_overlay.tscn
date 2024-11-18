@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://baqytnf6w8p5"]
+
+[ext_resource type="Script" path="res://construction_overlay.gd" id="1_3y6ub"]
+
+[node name="ConstructionOverlay" type="ColorRect"]
+offset_right = 24.0
+offset_bottom = 24.0
+color = Color(0, 0, 0, 0.498039)
+script = ExtResource("1_3y6ub")
+
+[node name="ConstructionProgressOutline" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 18.0
+offset_right = 22.0
+offset_bottom = 22.0
+color = Color(0.4, 0.4, 0.4, 1)
+
+[node name="ConstructionProgressBar" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 19.0
+offset_right = 3.0
+offset_bottom = 21.0
+color = Color(1, 0.6, 0, 1)
+
+[node name="ConstructionTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="ConstructionTimer" to="." method="increment_build_progress"]

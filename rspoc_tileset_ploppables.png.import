@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drvw2x5cghsq4"
-path="res://.godot/imported/tool-bulldozer.png-257737b9877c63ea1e5e458bf5bbe097.ctex"
+uid="uid://cxjs8pkpc1r5s"
+path="res://.godot/imported/rspoc_tileset_ploppables.png-ca51fc0cd7065401644251cb444576ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tool-bulldozer.png"
-dest_files=["res://.godot/imported/tool-bulldozer.png-257737b9877c63ea1e5e458bf5bbe097.ctex"]
+source_file="res://rspoc_tileset_ploppables.png"
+dest_files=["res://.godot/imported/rspoc_tileset_ploppables.png-ca51fc0cd7065401644251cb444576ed.ctex"]
 
 [params]
 

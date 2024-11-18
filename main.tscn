@@ -1,11 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://kooblgcjh442"]
+[gd_scene load_steps=5 format=3 uid="uid://kooblgcjh442"]
 
 [ext_resource type="PackedScene" uid="uid://i2ij16lpnsna" path="res://region_map.tscn" id="1_j75vb"]
 [ext_resource type="Script" path="res://main.gd" id="1_wv81t"]
+[ext_resource type="Texture2D" uid="uid://cal62ilaesqi0" path="res://rspoc_grid.png" id="2_hhxf5"]
 [ext_resource type="PackedScene" uid="uid://c0oekqlmris8s" path="res://hud.tscn" id="2_savw4"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_wv81t")
+
+[node name="BackgroundGrid" type="Sprite2D" parent="."]
+texture = ExtResource("2_hhxf5")
+centered = false
 
 [node name="RegionMap" parent="." instance=ExtResource("1_j75vb")]
 use_parent_material = false
