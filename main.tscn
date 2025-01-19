@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://i2ij16lpnsna" path="res://region_map.tscn" id="1_j75vb"]
 [ext_resource type="Script" path="res://main.gd" id="1_wv81t"]
-[ext_resource type="Texture2D" uid="uid://cal62ilaesqi0" path="res://rspoc_grid.png" id="2_hhxf5"]
+[ext_resource type="Texture2D" uid="uid://cal62ilaesqi0" path="res://grid.png" id="2_hhxf5"]
 [ext_resource type="PackedScene" uid="uid://c0oekqlmris8s" path="res://hud.tscn" id="2_savw4"]
 
 [node name="Main" type="Node"]
@@ -13,7 +13,6 @@ texture = ExtResource("2_hhxf5")
 centered = false
 
 [node name="RegionMap" parent="." instance=ExtResource("1_j75vb")]
-use_parent_material = false
 
 [node name="HUD" parent="." instance=ExtResource("2_savw4")]
 

@@ -1,6 +1,6 @@
 extends ColorRect
 
-const BUILD_COMPLETE = 3
+var build_time = 3;
 var build_progress = 0
 
 signal build_started()
@@ -14,14 +14,16 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func set_build_time(time: int) -> void:
+	build_time = time
 
 func increment_build_progress() -> void:
 	build_progress += 1
 	$ConstructionProgressBar.set_size(
-		Vector2((($ConstructionProgressOutline.get_size().x - 2) / BUILD_COMPLETE) * build_progress,
+		Vector2((($ConstructionProgressOutline.get_size().x - 2) / build_time) * build_progress,
 		$ConstructionProgressBar.get_size().y)
 	)
 	if(build_progress == 1):
 		build_started.emit()
-	elif(build_progress >= 3):
+	elif(build_progress >= build_time):
 		queue_free()

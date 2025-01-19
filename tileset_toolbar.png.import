@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfjbabyxap7va"
-path="res://.godot/imported/rspoc_tileset_road.png-6bbd1fab69a06d5e7f4eba11c2945702.ctex"
+uid="uid://cq6lxtp1kj128"
+path="res://.godot/imported/tileset_toolbar.png-6fe06fb368ddad91e81b30496c9fa5e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rspoc_tileset_road.png"
-dest_files=["res://.godot/imported/rspoc_tileset_road.png-6bbd1fab69a06d5e7f4eba11c2945702.ctex"]
+source_file="res://tileset_toolbar.png"
+dest_files=["res://.godot/imported/tileset_toolbar.png-6fe06fb368ddad91e81b30496c9fa5e7.ctex"]
 
 [params]
 

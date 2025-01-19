@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://c0oekqlmris8s"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_w4ewj"]
-[ext_resource type="Texture2D" uid="uid://cq6lxtp1kj128" path="res://rspoc_tileset_toolbar.png" id="2_a85s6"]
+[ext_resource type="Texture2D" uid="uid://cq6lxtp1kj128" path="res://tileset_toolbar.png" id="2_a85s6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vuvw"]
 atlas = ExtResource("2_a85s6")
@@ -96,7 +96,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_8vuvw")
 stretch_mode = 3
 
-[node name="TextureButtonRoad" type="TextureButton" parent="."]
+[node name="TextureButtonPlant" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 72.0
 offset_right = 88.0
@@ -105,7 +105,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_isif3")
 stretch_mode = 3
 
-[node name="TextureButtonPlant" type="TextureButton" parent="."]
+[node name="TextureButtonLines" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 112.0
 offset_right = 48.0
@@ -114,8 +114,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_40f2n")
 stretch_mode = 3
 
-[node name="TextureButtonLines" type="TextureButton" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
+[node name="TextureButtonSubStn" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 112.0
 offset_right = 88.0
@@ -124,7 +123,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_svik2")
 stretch_mode = 3
 
-[node name="TextureButtonResZone" type="TextureButton" parent="."]
+[node name="TextureButtonRoad" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 152.0
 offset_right = 48.0
@@ -133,7 +132,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_hc83t")
 stretch_mode = 3
 
-[node name="TextureButtonComZone" type="TextureButton" parent="."]
+[node name="TextureButtonBusStop" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 152.0
 offset_right = 88.0
@@ -142,7 +141,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_08j7x")
 stretch_mode = 3
 
-[node name="TextureButtonIndZone" type="TextureButton" parent="."]
+[node name="TextureButtonResZone" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 192.0
 offset_right = 48.0
@@ -151,7 +150,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_07t7l")
 stretch_mode = 3
 
-[node name="TextureButtonMixZone" type="TextureButton" parent="."]
+[node name="TextureButtonComZone" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 192.0
 offset_right = 88.0
@@ -160,7 +159,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_ybx1a")
 stretch_mode = 3
 
-[node name="TextureButtonPolice" type="TextureButton" parent="."]
+[node name="TextureButtonIndZone" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 232.0
 offset_right = 48.0
@@ -169,7 +168,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_dah5y")
 stretch_mode = 3
 
-[node name="TextureButtonFire" type="TextureButton" parent="."]
+[node name="TextureButtonMixZone" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 232.0
 offset_right = 88.0
@@ -178,7 +177,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_huirj")
 stretch_mode = 3
 
-[node name="TextureButtonHospital" type="TextureButton" parent="."]
+[node name="TextureButtonDock" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 272.0
 offset_right = 48.0
@@ -187,7 +186,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_6j1ie")
 stretch_mode = 3
 
-[node name="TextureButtonSchool" type="TextureButton" parent="."]
+[node name="TextureButtonPark" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 272.0
 offset_right = 88.0
@@ -196,7 +195,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_pxwqw")
 stretch_mode = 3
 
-[node name="TextureButtonPark" type="TextureButton" parent="."]
+[node name="TextureButtonPolice" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 312.0
 offset_right = 48.0
@@ -205,8 +204,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_ovpdu")
 stretch_mode = 3
 
-[node name="TextureButtonBusStop" type="TextureButton" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
+[node name="TextureButtonFire" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 312.0
 offset_right = 88.0
@@ -215,8 +213,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_a056l")
 stretch_mode = 3
 
-[node name="TextureButtonDock" type="TextureButton" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
+[node name="TextureButtonHospital" type="TextureButton" parent="."]
 offset_left = 8.0
 offset_top = 352.0
 offset_right = 48.0
@@ -225,8 +222,7 @@ toggle_mode = true
 texture_normal = SubResource("AtlasTexture_4ie2i")
 stretch_mode = 3
 
-[node name="TextureButtonAirport" type="TextureButton" parent="."]
-modulate = Color(0.4, 0.4, 0.4, 1)
+[node name="TextureButtonSchool" type="TextureButton" parent="."]
 offset_left = 48.0
 offset_top = 352.0
 offset_right = 88.0
@@ -236,10 +232,10 @@ texture_normal = SubResource("AtlasTexture_tehuw")
 stretch_mode = 3
 
 [node name="SelectedToolRect" type="ReferenceRect" parent="."]
-offset_left = 48.0
-offset_top = 72.0
-offset_right = 88.0
-offset_bottom = 112.0
+offset_left = 8.0
+offset_top = 152.0
+offset_right = 48.0
+offset_bottom = 192.0
 border_width = 2.0
 editor_only = false
 
